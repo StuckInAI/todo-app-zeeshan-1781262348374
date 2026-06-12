@@ -3,6 +3,7 @@ import AddTodoForm from '@/components/AddTodoForm';
 import TodoList from '@/components/TodoList';
 import FilterBar from '@/components/FilterBar';
 import StatsBar from '@/components/StatsBar';
+import Timer from '@/components/Timer';
 
 export default function TodoPage() {
   const {
@@ -31,6 +32,8 @@ export default function TodoPage() {
 
       {/* Card */}
       <div className="w-full max-w-xl bg-[#0f1f0f] rounded-2xl shadow-2xl overflow-hidden">
+        <Timer />
+
         <AddTodoForm onAdd={addTodo} />
 
         <StatsBar
