@@ -56,8 +56,8 @@ export default function TodoItem({
         className={clsx(
           'w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-all',
           todo.completed
-            ? 'bg-indigo-500 border-indigo-500'
-            : 'border-slate-600 hover:border-indigo-400'
+            ? 'bg-green-600 border-green-600'
+            : 'border-slate-600 hover:border-green-500'
         )}
       >
         {todo.completed && <Check size={11} className="text-white" strokeWidth={3} />}
@@ -72,7 +72,7 @@ export default function TodoItem({
             setDraft(e.target.value)
           }
           onKeyDown={handleKeyDown}
-          className="flex-1 bg-white/5 rounded-lg px-2 py-0.5 text-sm text-white outline-none border border-indigo-500/50 focus:border-indigo-400"
+          className="flex-1 bg-white/5 rounded-lg px-2 py-0.5 text-sm text-white outline-none border border-green-600/50 focus:border-green-500"
         />
       ) : (
         <span
@@ -91,7 +91,7 @@ export default function TodoItem({
           <>
             <button
               onClick={handleSave}
-              className="p-1.5 rounded-lg hover:bg-emerald-500/20 text-emerald-400 transition-colors"
+              className="p-1.5 rounded-lg hover:bg-green-500/20 text-green-400 transition-colors"
             >
               <Check size={14} />
             </button>
@@ -110,7 +110,7 @@ export default function TodoItem({
                   setDraft(todo.text);
                   setEditing(true);
                 }}
-                className="p-1.5 rounded-lg hover:bg-indigo-500/20 text-slate-500 hover:text-indigo-400 transition-colors"
+                className="p-1.5 rounded-lg hover:bg-green-500/20 text-slate-500 hover:text-green-400 transition-colors"
               >
                 <Pencil size={14} />
               </button>

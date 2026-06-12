@@ -20,7 +20,7 @@ export default function TodoPage() {
   } = useTodos();
 
   return (
-    <div className="min-h-screen bg-[#13131f] flex flex-col items-center px-4 py-12">
+    <div className="min-h-screen bg-[#0a160a] flex flex-col items-center px-4 py-12">
       {/* Header */}
       <div className="w-full max-w-xl mb-8 text-center">
         <h1 className="text-4xl font-bold tracking-tight text-white mb-1">
@@ -30,7 +30,7 @@ export default function TodoPage() {
       </div>
 
       {/* Card */}
-      <div className="w-full max-w-xl bg-[#1e1e2e] rounded-2xl shadow-2xl overflow-hidden">
+      <div className="w-full max-w-xl bg-[#0f1f0f] rounded-2xl shadow-2xl overflow-hidden">
         <AddTodoForm onAdd={addTodo} />
 
         <StatsBar

@@ -62,7 +62,7 @@ export default function AddTodoForm({ onAdd }: AddTodoFormProps) {
       <button
         type="submit"
         disabled={!text.trim()}
-        className="w-8 h-8 flex items-center justify-center rounded-full bg-indigo-500 hover:bg-indigo-400 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="w-8 h-8 flex items-center justify-center rounded-full bg-green-600 hover:bg-green-500 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
       >
         <Plus size={16} className="text-white" />
       </button>

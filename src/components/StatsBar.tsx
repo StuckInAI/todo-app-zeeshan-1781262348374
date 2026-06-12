@@ -21,7 +21,7 @@ export default function StatsBar({
       </div>
       <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
         <div
-          className="h-full bg-indigo-500 rounded-full transition-all duration-500"
+          className="h-full bg-green-600 rounded-full transition-all duration-500"
           style={{ width: `${pct}%` }}
         />
       </div>

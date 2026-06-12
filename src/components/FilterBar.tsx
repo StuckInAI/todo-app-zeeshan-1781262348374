@@ -30,7 +30,7 @@ export default function FilterBar({
             className={clsx(
               'text-xs font-medium px-3 py-1.5 rounded-lg transition-all',
               filter === f.value
-                ? 'bg-indigo-500/20 text-indigo-300'
+                ? 'bg-green-600/20 text-green-400'
                 : 'text-slate-400 hover:text-white'
             )}
           >
